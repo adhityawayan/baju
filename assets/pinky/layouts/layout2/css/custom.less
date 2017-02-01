@@ -1,0 +1,383 @@
+/* here you can put your own css to customize and override the theme */
+.page-sidebar {
+
+	.page-sidebar-menu {
+
+		& > li {
+
+			&.heading {
+
+				h3 {
+					
+				}
+			}
+		}
+	}
+}
+
+.detail-title {
+	border-bottom: 1px solid #ececec;
+	margin: 0 0 10px;
+	padding-bottom: 10px;
+
+	span {
+		display: inline-block;
+		font-weight: 700;
+		width: 148px;
+	}
+
+	&:last-child {
+		border: medium none;
+		margin: 0;
+		padding: 0;
+	}
+}
+.dibuat,
+.update {
+	
+	span {
+		display: inline-block;
+		font-weight: 700;
+		width: 148px;
+	}
+}
+.select2-container--bootstrap .select2-selection--single {
+	padding-left: 33px;
+}
+.qty-hide {
+  background: #f1f4f7;
+  border-radius: 2px;
+  margin-top: 15px;
+  padding: 15px;
+}
+.page-header.navbar .page-logo .logo-default {
+	margin: 15px 0 0;
+}
+.page-header.navbar .page-logo {
+	padding-left: 10px;
+}
+
+.mt30 {
+	margin-top: 30px;
+}
+
+.form-horizontal .control-label.text-left {
+  text-align: left;
+}
+
+.page-header.navbar .top-menu .navbar-nav > li.logout-link a {
+	padding: 0;
+    cursor: pointer;
+    padding: 24px 12px;
+
+	& > i {
+		color: #c0cddc;
+		font-size: 19px;
+		top: 3px;
+	}
+}
+
+.page-header.navbar .top-menu .navbar-nav > li.dropdown > .dropdown-toggle:last-child {
+  padding-right: 12px;
+}
+
+#invoice .form-control-static {
+  margin: 0;
+  min-height: auto;
+  padding: 0;
+}
+
+tbody.form-control-static {
+	display: table-row-group;
+}
+
+.m0 {
+  margin: 0 !important;
+}
+
+.mt0 {
+	margin-top: 0 !important;
+}
+.mt5 {
+	margin-top: 5px !important;
+}
+.mr15 {
+	margin-right: 15px !important;
+}
+
+.mb0 {
+	margin-bottom: 0 !important;
+}
+
+.mb5 {
+	margin-bottom: 5px !important;
+}
+
+.mb10 {
+	margin-bottom: 10px !important;
+}
+
+.mb15 {
+	margin-bottom:15px !important;
+}
+
+.border-spacing {
+	border-bottom: 2px solid #333333;
+	border-top: 2px solid #333333;
+	height: 5px;
+	margin: 15px 0;
+}
+
+.page-content::before {
+	bottom: 0;
+	color: #dedede;
+	content: "\f085";
+	font-family: "FontAwesome";
+	font-size: 200px;
+	line-height: 1.4;
+	position: absolute;
+	right: 0;
+}
+
+#invoice {
+	position: relative;
+	z-index: 1;
+}
+
+.modal-open .all-button {
+	margin: 15px 0 0;
+}
+
+.logo-invoice {
+	position: absolute;
+	right: 15px;
+	top: 0;
+	width: 200px;
+}
+
+.invoice-style,
+.term-style {
+	position: relative;
+	background: url(../../../pages/img/logo-invoice-background.png) no-repeat center center;
+
+	.background {
+		bottom: 0;
+		content: "";
+		display: none !important;
+		left: 0;
+		position: absolute;
+		right: 0;
+		text-align: center;
+		top: 0;
+
+		& > img {
+			margin: 0 auto;
+			position: relative;
+			top: 50%;
+			-webkit-animation: translateY(-50%);
+			-moz-transform: translateY(-50%);
+			transform: translateY(-50%);
+		}
+	}
+}
+
+.portlet > .portlet-body {
+	background: url(../../../pages/img/logo-body-background.png) no-repeat center bottom;
+}
+
+.label.transaksi-status {
+	left: 5px;
+	line-height: 1.5;
+	padding: 3px 10px;
+	position: absolute;
+	top: 5px;
+}
+
+.hide-on-modal {
+	display: none !important;
+}
+
+.term-style {
+	background: url(../../../pages/img/logo-invoice-background.png) no-repeat center center;
+	border: 2px dotted #333333;
+	margin: 15px 0 0;
+	padding: 15px;
+}
+
+.table-scrollable > .table {
+	background: none;
+}
+
+.qty-hid,
+#return_tanggal_selesai,
+.hr_return_tanggal_selesai {
+	display: none;
+}
+
+.transaksi_quantity:invalid {
+	border: 3px solid red;
+}
+
+.login {
+	background-color: #d93a6f !important;
+
+	.content {
+		border: 5px solid #21aae0;
+		border-radius: 10px;
+
+		.input-icon {
+			border-left: 2px solid #21aae0 !important;
+		}
+	}
+}
+
+.check-hidden {
+	display: none;
+}
+
+.pd15 {
+	padding: 15px !important;
+}
+
+@media print {
+    /* on modal open bootstrap adds class "modal-open" to body, so you can handle that case and hide body */
+    .modal-open {
+
+	    .page-container,
+	    .modal-backdrop,
+	    .clearfix,
+	    .page-header {
+	        visibility: hidden;
+	    }
+
+	    .modal.container {
+	    	margin: 0;
+	    }
+
+	    #ajax-modal-full {
+	        position: absolute;
+	        padding: 0;
+	        margin: 0;
+	        left: 0;
+	        top: 0;
+	        width: 100%;
+	        border: none;
+
+	        #invoice {
+	        	margin: 0;
+	        }
+	    }
+    }
+
+	.page-content::before {
+	 	visibility: hidden;
+	}
+
+	.hide-on-modal,
+	.show-print {
+		display: block !important;
+	}
+
+	.page-content #invoice {
+		position: absolute;
+		padding: 0;
+		margin: 0;
+		left: 0;
+		top: 0;
+		width: 100%;
+		border: none;
+	}
+
+	.invoice-style,
+	.term-style {
+
+		.background {
+			display: block !important;
+		}
+	}
+
+	.table-scrollable > table.table {
+		background: transparent !important;
+
+		tr {
+			background: transparent !important;
+
+			td, th {
+				background: transparent !important;
+			}
+		}
+	}
+
+	#invoice .table-scrollable > table.table {
+		background-color: transparent !important;
+
+		tr {
+			background: transparent !important;
+
+			td, th {
+				background: transparent !important;
+
+			}
+		}
+	}
+
+	body * {
+		background-color: transparent !important;
+	}
+
+	#invoice .table-scrollable > .table {
+		background: none;
+	}
+
+	.hide-no-print,
+	.hidden-print {
+		display: none !important;
+	}
+
+	.header-invoice {
+		margin-top: -15px;
+	}
+
+	@font-face {
+		font-family: 'Consolas';
+		src: url('../font/consolas/Consolas.eot?#iefix') format('embedded-opentype'), 
+		url('../font/consolas/Consolas.woff') format('woff'),
+		url('../font/consolas/Consolas.ttf')  format('truetype'),
+		url('../font/consolas/Consolas.svg#Consolas') format('svg');
+		font-weight: normal;
+		font-style: normal;
+	}
+
+	*, body, p, h1, h2, h3, h4, h5, h6, span {
+		font-family: "Courier New","Open Sans", sans-serif !important;
+	}
+
+	#invoice .invoice-style, #invoice.term-style, #invoice.portlet > .portlet-body {
+		background: none !important;
+	}
+}
+
+.term-style .block.text-center {
+  margin: -10px 0 5px;
+  padding: 0;
+}
+
+.table > tbody > tr > td, .table > tbody > tr > th {
+	font-size: 14px;
+	padding: 3px 8px;
+}
+
+.border-spacing {
+	border-bottom: 2px solid #333;
+	border-top: 2px solid #333;
+	height: 5px;
+	margin: 0 0 3px;
+}
+
+.logo-invoice {
+	width: 100px;
+}
+
+.dataTables_info {
+	display: none !important;
+}
